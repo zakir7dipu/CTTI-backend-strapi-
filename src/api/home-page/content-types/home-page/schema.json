@@ -80,6 +80,17 @@
           "localized": true
         }
       }
+    },
+    "Popular": {
+      "displayName": "PopularCourse",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "course.popular-course"
     }
   }
 }
