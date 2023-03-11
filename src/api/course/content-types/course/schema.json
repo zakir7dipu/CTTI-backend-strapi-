@@ -76,10 +76,6 @@
       "type": "uid",
       "targetField": "Name"
     },
-    "View_In_Home_Page": {
-      "type": "boolean",
-      "default": false
-    },
     "reviews": {
       "type": "relation",
       "relation": "oneToMany",

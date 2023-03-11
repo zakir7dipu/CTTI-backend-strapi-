@@ -11,7 +11,7 @@ module.exports = createCoreController('api::course.course', ({ strapi }) =>  ({
       const {id} = ctx.params;
       const entry = await strapi.db.query('api::course.course').findOne({
         where: {slug:id},
-        populate: ["Thumbnail", "Banner", "curricula"]
+        populate: ["Thumbnail", "Banner", "curricula", "reviews"]
       });
       const sanitizedResults = await this.sanitizeOutput(entry, ctx);
   
